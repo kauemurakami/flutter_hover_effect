@@ -58,25 +58,6 @@ class ExamplePage extends StatelessWidget {
                   'Flutter Hover Effect',
                   style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('This a card example'),
-                        Text('Using hover effect'),
-                      ],
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('Like this package'),
-                        Text('Like the repo'),
-                      ],
-                    )
-                  ],
-                )
               ],
             ),
           ),
