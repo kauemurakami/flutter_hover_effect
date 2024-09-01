@@ -1,39 +1,92 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+## flutter_hover_effect
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+A Flutter package that adds interactive hover and tilt effects to any widget, enhancing user experience with smooth and responsive animations.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+Add hover/tilt effect to any widget quickly and simply with flutter_hover_effect
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+```
+$ flutter pub add flutter_hover_effect
+```
+or add in your dependencies in `pubspec.yaml`  
+```yaml
+dependencies:
+  flutter_hover_effect:
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Short example, for a more complex example go to the `/example` folder:  
 
 ```dart
-const like = 'sample';
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: ExamplePage(),
+    );
+  }
+}
+
+class ExamplePage extends StatelessWidget {
+  ExamplePage({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: const Color(0xff191d2d),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          HoverEffect(
+            widget: const Column(
+              children: [
+                Text(
+                  'Flutter Hover Effect',
+                  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('This a card example'),
+                        Text('Using hover effect'),
+                      ],
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Like this package'),
+                        Text('Like the repo'),
+                      ],
+                    )
+                  ],
+                )
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
 ```
 
-## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+
+

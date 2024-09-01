@@ -1,6 +1,27 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_hover_effect/flutter_hover_effect.dart';
+## flutter_hover_effect
 
+Um pacote Flutter que adiciona efeitos interativos de foco e inclinação a qualquer widget, aprimorando a experiência do usuário com animações suaves e responsivas.
+
+## Funcionalidades
+
+Adicione o efeito hover/tilt em qualquer widget de maneira simples e rápida com flutter_hover_effect
+
+## Instalação
+
+```
+$ flutter pub add flutter_hover_effect
+```
+ou adicione em suas `dependencies` em `pubspec.yaml`  
+```yaml
+dependencies:
+  flutter_hover_effect:
+```
+
+## Usando
+
+Exemplo curto, para um exemplo mais complexo acesse a pasta `/example`:  
+
+```dart
 void main() {
   runApp(const MyApp());
 }
@@ -59,31 +80,11 @@ class ExamplePage extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(
-            height: 56.0,
-          ),
-          HoverEffect(
-              padding: EdgeInsets.zero,
-              boxShadowColor: Colors.purple,
-              boxShadowBlurRadius: 16.0,
-              amplitude: .5,
-              returnOriginalPosition: false,
-              height: 200,
-              width: 200,
-              backgroundColor: Colors.transparent,
-              shape: BoxShape.circle,
-              widget: Container(
-                decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                  image: DecorationImage(
-                    image: NetworkImage(
-                      'https://picsum.photos/250?image=9',
-                    ),
-                  ),
-                ),
-              )),
         ],
       ),
     );
   }
 }
+```
+
+
