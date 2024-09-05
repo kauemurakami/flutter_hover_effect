@@ -2,6 +2,8 @@
 
 Um pacote Flutter que adiciona efeitos interativos de foco e inclinação a qualquer widget, aprimorando a experiência do usuário com animações suaves e responsivas.
 
+<img src="https://github.com/kauemurakami/flutter_hover_effect/raw/main/example/assets/flutter_hover_effect.gif" width="240" height="370"/>
+
 ## Funcionalidades
 
 Adicione o efeito hover/tilt em qualquer widget de maneira simples e rápida com flutter_hover_effect
