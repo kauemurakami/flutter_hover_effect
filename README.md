@@ -2,6 +2,7 @@
 
 A Flutter package that adds interactive hover and tilt effects to any widget, enhancing user experience with smooth and responsive animations.
 
+
 ## Features
 
 Add hover/tilt effect to any widget quickly and simply with flutter_hover_effect
